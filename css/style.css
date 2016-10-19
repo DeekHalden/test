@@ -8,15 +8,16 @@
     margin: 0;
 }
 
+.no-margin {
+    margin: 0;
+}
 
 nav.navbar {
     background-color: #C8B485;
     line-height: 20px;
-    height: auto;
     margin-bottom: 0;
     border: none;
 }
-
 
 button[data-target="#bs-example-navbar-collapse-1"] {
     width: 50px;
@@ -39,32 +40,41 @@ button[data-target="#bs-example-navbar-collapse-1"]:hover {
     height: 100%;
     text-align: center;
     color: #000;
-    background-color:#D2C29B;
+    background-color: #D2C29B;
 }
 
 .navbar-nav {
-	box-sizing:border-box;
+    box-sizing: border-box;
     display: block;
+    margin: auto;
+    padding-top: 5px;
 }
-.navbar-nav {
-    margin:0;
+
+.navbar-header .navbar-nav li {
+    padding-right: 0;
+    padding-left: 0;
+    display: block;
 }
 
 .navbar-nav a:first-child img {
-	width:18px;
-	height:18px;
-	vertical-align:top;
+    width: 18px;
+    height: 18px;
+    vertical-align: top;
+}
+
+.navbar-nav a:first-child span {
+    font-size: 16px;
+    color: #000;
 }
 
 .navbar-nav a:last-child span {
     font-weight: 100;
-    font-size:18px;
-    
+    font-size: 16px;
 }
+
 .vcenter {
     display: inline-block;
     vertical-align: middle;
-    float: none;
 }
 
 .navbar-default .navbar-collapse,
@@ -127,8 +137,9 @@ button[data-target="#bs-example-navbar-collapse-1"]:hover {
 .wrapper .expert i {
     color: #EED002;
 }
+
 .expert {
-	background-color:#ffffff;
+    background-color: #ffffff;
 }
 
 .progress {
@@ -312,7 +323,7 @@ a[href^="https://maps.google.com/maps"] {
     height: 100px;
     position: absolute;
     left: 50px;
-    top:50px;
+    top: 50px;
 }
 
 .timeline .card {
@@ -332,52 +343,52 @@ a[href^="https://maps.google.com/maps"] {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
+
 /*  */
 
 .svg_container {
-	background-color:#ffffff;
-	padding-bottom:4em;
+    background-color: #ffffff;
+    padding-bottom: 4em;
 }
 
 .shape {
-	width: auto;
-	height: auto;
+    width: auto;
+    height: auto;
 }
 
 .svg_container .row h3 {
-	font-weight: 600;
-	letter-spacing:1.1px;
-	margin-top:0;
+    font-weight: 600;
+    letter-spacing: 1.1px;
+    margin-top: 0;
 }
 
 .svg_container .btn {
-	text-transform: uppercase;
-	background-color:#FFDF06;
-	color:#51490A;
-	border:none;
+    text-transform: uppercase;
+    background-color: #FFDF06;
+    color: #51490A;
+    border: none;
 }
 
 footer {
-	background-color:#453C25
+    background-color: #453C25
 }
 
-footer ul{
-	padding:1em;
-	margin-bottom:0;
+footer ul {
+    padding: 1em;
+    margin-bottom: 0;
 }
 
 footer ul a {
-	color:#fff;
-	letter-spacing:1.2px;
+    color: #fff;
+    letter-spacing: 1.2px;
 }
 
-
-
 footer i {
-	color:#fff;
-	padding-top: 0.5em;
+    color: #fff;
+    padding-top: 0.5em;
 }
 
 footer span {
-	color:#6D603E;
+    color: #6D603E;
 }
