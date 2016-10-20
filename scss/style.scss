@@ -403,10 +403,11 @@ footer {
 
 .carousel {
     .item_map {
-        height: 30em;
-        position: relative;
+        height:70em;
+        
+        
         .details_button_wrapper_left {
-            min-height: 40px;
+            min-height:40px ;
             min-width: 30px;
             max-width: 50px;
             position: absolute;
@@ -429,7 +430,7 @@ footer {
             }
         }
         #map1 {
-            height: 30em;
+            height: 100%;
         }
     }
     .carousel-control.right,

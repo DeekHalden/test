@@ -1,4 +1,4 @@
-var map;    // declares a global map variable
+let map;    // declares a global map letiable
 
 
 /*
@@ -6,9 +6,9 @@ Start here! initializeMap() is called when page is loaded.
 */
 function initializeMap() {
 
-  var locations;
+  let locations;
 
-  var mapOptions = {
+  let mapOptions = {
     zoom: 14,
         
         disableDefaultUI: true,
@@ -17,7 +17,7 @@ function initializeMap() {
   };
 
   /* 
-  For the map to be displayed, the googleMap var must be
+  For the map to be displayed, the googleMap let must be
   appended to #mapDiv in resumeBuilder.js. 
   */
   map = new google.maps.Map(document.getElementById('map1'), mapOptions);
@@ -30,10 +30,10 @@ function initializeMap() {
   function locationFinder() {
 
     // initializes an empty array
-    var locations = [];
+    let locations = [];
 
     // adds the single location property from bio to the locations array
-      var loc = document.getElementsByClassName('no-padding')[0].innerHTML;
+      let loc = document.getElementsByClassName('no-padding')[0].innerHTML;
 
       locations.push(loc);
     
@@ -48,14 +48,14 @@ function initializeMap() {
   */
   function createMapMarker(placeData) {
 
-    // The next lines save location data from the search result object to local variables
-    var lat = placeData.geometry.location.lat();  // latitude from the place service
-    var lon = placeData.geometry.location.lng();  // longitude from the place service
-    var name = placeData.formatted_address;   // name of the place from the place service
-    var bounds = window.mapBounds;            // current boundaries of the map window
+    // The next lines save location data from the search result object to local letiables
+    let lat = placeData.geometry.location.lat();  // latitude from the place service
+    let lon = placeData.geometry.location.lng();  // longitude from the place service
+    let name = placeData.formatted_address;   // name of the place from the place service
+    let bounds = window.mapBounds;            // current boundaries of the map window
 
     // marker is an object with additional data about the pin for a single location
-    var marker = new google.maps.Marker({
+    let marker = new google.maps.Marker({
       map: map,
       position: placeData.geometry.location,
       title: name
@@ -64,7 +64,7 @@ function initializeMap() {
     // infoWindows are the little helper windows that open when you click
     // or hover over a pin on a map. They usually contain more information
     // about a location.
-    var infoWindow = new google.maps.InfoWindow({
+    let infoWindow = new google.maps.InfoWindow({
       content: name
     });
 
@@ -100,13 +100,13 @@ function initializeMap() {
 
     // creates a Google place search service object. PlacesService does the work of
     // actually searching for location data.
-    var service = new google.maps.places.PlacesService(map);
+    let service = new google.maps.places.PlacesService(map);
 
     // Iterates through the array of locations, creates a search object for each location
-    for (var place in locations) {
+    for (let place in locations) {
 
       // the search request object
-      var request = {
+      let request = {
         query: locations[place]
       };
 
