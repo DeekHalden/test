@@ -9,8 +9,11 @@ function initializeMap() {
   var locations;
 
   var mapOptions = {
-    disableDefaultUI: true,
-    zoom:14
+    zoom: 14,
+        
+        disableDefaultUI: true,
+        panControl: false,
+        
   };
 
   /* 
