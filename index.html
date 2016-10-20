@@ -5,38 +5,38 @@
     <meta charset="UTF-8">
     <title>Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
+   
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" media="screen and (max-width:736px)">
 </head>
 
 <body>
     <nav class="navbar navbar-default" role="navigation">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button align="center" type="button" class="pull-left navbar-toggle collapsed no-border" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <div class="navbar-header row">
+                <button align="center" type="button" class="pull-left navbar-toggle collapsed col-xs-1" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                
-                	<ul class="nav navbar-nav col-xs-10 no-padding">
-                	<li class="col-xs-6 text-center"><a href="#">
-	                        <span class="vcenter"><img src="images/binocular.png"> Overview</span>
-	                    </a></li>
-                	<li  class="col-xs-6 text-center"><a href="#">
-	                        <span  class="vcenter glyphicon glyphicon-map-marker"></span><span class="text-muted"> Details</span>
-	                    </a>
-                		</li>
-	                    
-	                    
-                	
-                
+                <ul class="nav navbar-nav col-xs-10 col-xs-push-1">
+                    <li class="col-xs-6  text-center">
+                        <a href="index.html" class="text-muted active col-xs-12">
+                            <span class=""><img src="images/binocular.png"> Overview</span>
+                        </a>
+                    </li>
+                    <li class="col-xs-6">
+                        <a href="details.html" class="text-center col-xs-12">
+                            <span class="glyphicon glyphicon-map-marker"></span><span class="text-muted"> Details</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -52,7 +52,7 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    <section class="wrapper container-fluid">
+    <section class="wrapper_content container-fluid">
         <div class="row">
             <img class="img-responsive scaled" src="http://photos.wikimapia.org/p/00/02/98/16/39_big.jpg" alt="Fabolous Las Vegas">
             <div class="button-group">
@@ -135,31 +135,37 @@
                 <div id="collapse1" class="panel-collapse collapse in">
                     <div class="panel-body">
                         <div id="map"></div>
-                        <ul class="timeline">
-                            <li class="col-xs-9 col-xs-offset-3 col-sm-9 col-sm-offset-6">
-                                <div class="timeline-badge success">10.00 <i class="fa fa-circle-o"></i><span></span></div>
-                                <div class="card ">
-                                    <img class="card-img-top img-responsive" src="http://photos.wikimapia.org/p/00/02/98/16/39_big.jpg" alt="Welcome img">
-                                    <div class="card-block">
-                                        <span class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                        <ul id="timeline" class="timeline">
+                            <li class="timeline-inverted">
+                                <div class="timeline-badge">10.00 <i class="fa fa-circle-o"></i><span></span></div>
+                                <div class="timeline-panel">
+                                    <div class="card">
+                                        <img class="card-img-top img-responsive" src="http://photos.wikimapia.org/p/00/02/98/16/39_big.jpg" alt="Welcome img">
+                                        <div class="card-block">
+                                            <span class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
-                            <li class="col-xs-9 col-xs-offset-3 col-sm-9 col-sm-offset-6">
-                                <div class="timeline-badge success">15.00<i class="fa fa fa-circle-o"></i></div>
-                                <div class="card ">
-                                    <img class="card-img-top img-responsive" src="http://loveopium.ru/content/2013/05/fountains/18big.jpg" alt="Fountain img">
-                                    <div class="card-block">
-                                        <span class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                            <li>
+                                <div class="timeline-badge">15.00<i class="fa fa fa-circle-o"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="card">
+                                        <img class="card-img-top img-responsive" src="http://loveopium.ru/content/2013/05/fountains/18big.jpg" alt="Fountain img">
+                                        <div class="card-block">
+                                            <span class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
-                            <li class="col-xs-9 col-xs-offset-3 col-sm-9 col-sm-offset-6">
-                                <div class="timeline-badge success">15.00<i class="fa fa fa-circle-o"></i></div>
-                                <div class="card ">
-                                    <img class="card-img-top img-responsive" src="https://media-cdn.tripadvisor.com/media/photo-s/01/61/a7/d4/gondola-rides-at-the.jpg" alt="Gondola img">
-                                    <div class="card-block">
-                                        <span class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                            <li class="timeline-inverted">
+                                <div class="timeline-badge">15.00<i class="fa fa fa-circle-o"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="card">
+                                        <img class="card-img-top img-responsive" src="https://media-cdn.tripadvisor.com/media/photo-s/01/61/a7/d4/gondola-rides-at-the.jpg" alt="Gondola img">
+                                        <div class="card-block">
+                                            <span class="card-text text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -266,36 +272,36 @@
                 <div class="col-xs-12 text-center">
                     <h3 class="">Want more itineraries?</h3>
                     <p>Use the marketplace to find the itinerary with different cities and activities </p>
-                    <button class="btn btn-warning col-xs-10 col-sm-8 col-xs-offset-1 col-sm-offset-2">Browse itinerary</button>
+                    <button class="btn btn-warning col-xs-10 col-sm-8 col-xs-offset-1 col-sm-offset-3">Browse itinerary</button>
                 </div>
             </div>
         </div>
     </div>
     <footer class="row-footer">
-    	<div class="container">
-    		
-	        <div class="row">
-	            <div class="col-xs-3">
-	            <ul class="list-unstyled">
-	            	<li><a href="home">Home</a></li>
-	            	<li><a href="#">Itineraries</a></li>
-	            	<li><a href="#">About</a></li>
-	            </ul>
-	               
-	               
-	            </div>
-	            <div class="logo col-xs-3 col-sm-4 col-xs-offset-1 col-sm-offset-3">
-	            	<img src="images/w.svg" alt="" align="center">
-	            </div>
-				<div class="col-xs-5 col-sm-2 text-right">
-					<i class="fa fa-facebook-square" style="font-size: 24px;" aria-hidden="true"></i>
-                <i class="fa fa-twitter-square" style="font-size: 24px;" aria-hidden="true"></i><br>
-                <span>(c) Wanderist 2014 </span>
-				</div>
-	        </div>
-    	</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3">
+                    <ul class="list-unstyled">
+                        <li><a href="home">Home</a></li>
+                        <li><a href="#">Itineraries</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+                <div class="logo col-xs-4 col-sm-5 col-xs-offset-1 col-sm-offset-5 text-center">
+                    <img src="images/w.svg">
+                </div>
+                <div class="col-xs-4 col-sm-2 text-right">
+                    <i class="fa fa-facebook-square" style="font-size: 24px;" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square" style="font-size: 24px;" aria-hidden="true"></i>
+                    <br>
+                    <span>(c) Wanderist 2014 </span>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
+
+
 <script>
 function initMap() {
     var uluru = {

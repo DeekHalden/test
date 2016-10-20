@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="datedropper.min.js"></script>
+    <link href="datedropper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" media="screen and (max-width:736px)">
+</head>
+
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header row">
+                <button align="center" type="button" class="pull-left navbar-toggle collapsed no-border" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <ul class="nav navbar-nav col-xs-11">
+                    <li class="col-xs-6  text-center">
+                        <a href="index.html" class="">
+                            <span class=""><img src="images/binocular.png"> Overview</span>
+                        </a>
+                    </li>
+                    <li class="col-xs-6">
+                        <a href="details.html" class="active col-xs-12">
+                            <span class="glyphicon glyphicon-map-marker"></span><span> Details</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Itineraries</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="myCarousel" class="carousel slide" data-interval="false">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <section class="container" id="details">
+                    <div class="details_button_wrapper">
+                        <a href="#myCarousel" role="button" data-slide="next" class="details_button text-center"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </div>
+                    <input type="text">
+                    <div id="accordion1" role="tablist" aria-multiselectable="true">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingOne">
+                                <h5 class="mb-0">
+                              <a data-toggle="collapse" data-parent="#accordion1" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                 <div class="row">
+                                    <div class="col-xs-12">
+                                       <img class="icon" src="images/food.png" width="20px" height="20px;">
+                                       <h4 class="no-padding">Trattoria Del Ropeton</h4>
+                                       <p class="text-muted">Via Fontana del Ferro, 1, Verona, Italy</p>
+                                    </div>
+                                    <div class="">
+                                       <span>
+                                       <i class="fa fa-clock-o"></i> 10.00
+                                       </span>
+                                    </div>
+                                 </div>
+                              </a>
+                           </h5>
+                            </div>
+                            <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="card-block">
+                                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0d/2d/b8/13/photo0jpg.jpg" class="card-image" alt="" width="100%">
+                                    <p class="no-padding padding">Amazing owner who sings and serves the food himself! Expirience which you'll never forget and will include to the travel different mockups:)</p>
+                                </div>
+                            </div>
+                            <div class="timeline-badge">
+                                <div class="vertical-line vertical-line-before" style="height: 15px;"></div>
+                                <i class="fa fa-car" aria-hidden="true"></i><span></span>
+                                <div class="vertical-line vertical-line-after" style="height: 15px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="accordion2" role="tablist" aria-multiselectable="true">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingTwo">
+                                <h5 class="mb-0">
+                              <a data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                 <div class="row">
+                                    <div class="col-xs-12">
+                                       <i class="fa fa-shopping-cart" style="font-size:18px;"></i>
+                                       <h4 class="no-padding">Trattoria Da Ropeton</h4>
+                                       <p class="text-muted">Via Fontana del Ferro, 1, Verona, Italy</p>
+                                    </div>
+                                    <div class="">
+                                       <span>
+                                       <i class="fa fa-clock-o"></i> 11.00
+                                       </span>
+                                    </div>
+                                 </div>
+                              </a>
+                           </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="card-block">
+                                    <img src="http://placekitten.com/1000" class="card-image" alt="" width="100%">
+                                    <p class="no-padding padding">Want some Lorem? Nah, Papier-mache claymore mine nano-physical computer human order-flow franchise augmented reality San Francisco futurity neon DIY convenience store table beef noodles refrigerator. Skyscraper tank-traps Shibuya neon Chiba car drugs numinous artisanal office crypto-savant. Soul-delay assassin saturation point vehicle post-bridge numinous table advert urban. Pre-range-rover singularity advert long-chain hydrocarbons camera 8-bit fetishism San Francisco skyscraper.-ware-space neural computer receding futurity Legba katana digital. Marketing shrine assassin smart-man concrete DIY computer paranoid Tokyo market range-rover urban. Market hacker chrome vinyl bridge disposable systemic. Legba cartel city papier-mache assault construct Chiba digital grenade range-rover rifle systemic. Savant cyber-Chiba grenade render-farm wonton soup girl monofilament-space warehouse convenience store j-pop. </p>
+                                </div>
+                            </div>
+                            <div class="timeline-badge">
+                                <div class="vertical-line vertical-line-before" style="height: 15px;"></div>
+                                <i class="fa fa-bicycle" aria-hidden="true"></i><span></span>
+                                <div class="vertical-line vertical-line-after" style="height: 15px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="accordion3" role="tablist" aria-multiselectable="true">
+                        <div class="card">
+                            <div class="card-header" role="tab" id="headingThree">
+                                <h5 class="mb-0">
+                              <a data-toggle="collapse" data-parent="#accordion3" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                 <div class="row">
+                                    <div class="col-xs-12">
+                                       <i class="fa fa-heart" style="font-size:18px;"></i>
+                                       <h4 class="no-padding">Trattoria Da Ropeton</h4>
+                                       <p class="text-muted">Via Fontana del Ferro, 1, Verona, Italy</p>
+                                    </div>
+                                    <div class="">
+                                       <span>
+                                       <i class="fa fa-clock-o"></i> 12.00
+                                       </span>
+                                    </div>
+                                 </div>
+                              </a>
+                           </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="card-block">
+                                    <img src="http://placekitten.com/1200" class="card-image" alt="" width="100%">
+                                    <p class="no-padding padding">Amazing owner who sings and serves the food himself! Expirience which you'll never forget and will include to the travel different mockups:)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="item item_map">
+                    <div class="details_button_wrapper_left">
+                        <a href="#myCarousel" role="button" data-slide="prev" class="details_left text-center"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                    </div>
+                <div id="map1">
+                </div>
+            </div>
+        </div>
+        <!-- Left and right controls -->
+    </div>
+</body>
+<script>
+$("input").dateDropper({
+    maxYear: 2030,
+    dropPrimaryColor: "#FFDF06",
+
+    dropTextColor: "#333333",
+
+    dropBackgroundColor: "#FFFFFF",
+
+    dropBorder: "1px solid #FFDF06",
+
+    dropBorderRadius: 8,
+
+    dropShadow: "0 0 10px 0 rgba(0, 136, 204, 0.45)",
+
+    dropWidth: 124,
+
+    dropTextWeight: 'bold'
+
+
+
+});
+let monthNames = [
+        "Jan", "Feb", "Mar",
+        "Apr", "May", "Jun", "Jul",
+        "Aug", "Sep", "Oct",
+        "Nov", "Dec"
+    ],
+    date = new Date(),
+    day = date.getDate(),
+    monthIndex = date.getMonth(),
+    fullDate = monthNames[monthIndex] + ' ' + day;
+$("input").attr('placeholder', fullDate);
+</script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places" defer></script>
+<script src="map.js"></script>
+
+</html>
