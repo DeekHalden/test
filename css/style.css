@@ -101,7 +101,7 @@ button[data-target="#bs-example-navbar-collapse-1"] {
     bottom: 1.5em; }
   .wrapper_content .expert img {
     float: left;
-    padding-right: 1em; }
+    margin-right: 1em; }
   .wrapper_content .expert p {
     font-size: 20px;
     margin-bottom: 0; }
