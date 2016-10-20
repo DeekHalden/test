@@ -108,7 +108,7 @@ button[data-target="#bs-example-navbar-collapse-1"] {
         &:first-child {
             position: relative;
             z-index: 0;
-           
+            max-height:400px;
             img {
                 width: 100%;
             }

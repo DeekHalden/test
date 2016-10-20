@@ -82,7 +82,8 @@ button[data-target="#bs-example-navbar-collapse-1"] {
     padding-bottom: 1em; }
     .wrapper_content .row:first-child {
       position: relative;
-      z-index: 0; }
+      z-index: 0;
+      max-height: 400px; }
       .wrapper_content .row:first-child img {
         width: 100%; }
   .wrapper_content .button-group {

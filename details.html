@@ -43,7 +43,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="#">Itineraries</a></li>
                 <li><a href="#">About</a></li>
             </ul>
@@ -198,7 +198,7 @@ let monthNames = [
     fullDate = monthNames[monthIndex] + ' ' + day;
 $("input").attr('placeholder', fullDate);
 </script>
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyA5L7Z6WGpaYVB5ODvwpUhSQL_iZCqkdDE" defer async></script>
 <script src="map.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyA5L7Z6WGpaYVB5ODvwpUhSQL_iZCqkdDE&callback=initializeMap" defer async></script>
 
 </html>
